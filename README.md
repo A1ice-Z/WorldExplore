@@ -29,28 +29,9 @@ The website is also made mobile friendly, as it will adapt to the smaller screen
 
 To run the project, you need to have Node 22 installed. Clone the repository from git with `git clone https://git.ntnu.no/IT2810-H24/T10-Project-2.git`. Then navigate to the folder `frontend` by writing `cd frontend` in the terminal. Make sure you are located in the main branch when running the project. To ckeckout to the main branch you can run `git checkout main` in the terminal.
 
-Then you need to create two files: `.env` and `.env.local` in the backend folder on root level, if they are not already there. Also make sure the content inside the files are correct.
-<br />
-<br />
-In `.env` copy in this:
-
-```
-DATABASE_URL="postgresql://postgres@it2810-10.idi.ntnu.no:5432/worldexploredb2?schema=public"
-```
-
-While in `.env.local` copy in this:
-
-```
-POSTGRES_USER=postgres
-POSTGRES_HOST="it2810-10.idi.ntnu.no"
-POSTGRES_PORT=5342
-POSTGRES_PASSWORD=
-POSTGRES_DB=worldexploredb2
-```
-
 <br />
 
-Lastly, make sure that App.tsx in the frontend-folder has the following uri:
+Make sure that App.tsx in the frontend-folder has the following uri:
 
 ``` typescript
 uri: "http://it2810-10.idi.ntnu.no:3001/",
